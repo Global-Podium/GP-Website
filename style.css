@@ -1175,11 +1175,15 @@ form.contact-form {
     grid-template-columns: 1fr;
   }
 
+  .hero {
+    padding-top: 40px;
+  }
+
   .hero-badge-wrap {
-    order: -1;
+    order: 1;
     max-width: 480px;
     width: 100%;
-    margin: 0 auto 20px;
+    margin: 32px auto 20px;
   }
 
   .mission-grid {
