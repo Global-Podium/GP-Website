@@ -1,0 +1,48 @@
+/* ==========================================================================
+   JGHS 2026 — scoped color override
+   Pulled from the JGHS brochure: deep navy, maroon, and gold on warm neutrals.
+   Only variable values change here — every layout/component rule stays in
+   style.css. Because all components already read colors via var(--...),
+   this file alone reskins the whole page.
+   ========================================================================== */
+
+body.jghs-theme {
+    --navy: #1B2A4A;
+    /* was #1B2C40 — deep navy, headings & primary buttons */
+    --navy-2: #2B2420;
+    /* was #2E4A66 — warm near-black, used in a couple of gradients/accents */
+    --sky-deep: #8B2942;
+    /* was #4F9BC0 — maroon, primary accent / hover states */
+    --sky: #D4A24C;
+    /* was #7FC2E3 — gold, secondary accent / eyebrows */
+    --rose: #B33951;
+    /* was #CDA98C — rose/berry accent */
+    --sage: #8A8377;
+    /* was #ACB2A2 — muted warm grey, borders & small labels */
+    --cream: #FBF8F2;
+    /* was #F6F2E7 — brighter warm white, more contrast against navy/maroon */
+    --cream-2: #F1E9DC;
+    /* was #EFE9DA — warm parchment for alternating sections */
+    --paper: #FFFFFF;
+    /* was #FBF9F2 — cards go pure white for crisper contrast */
+    --ink: #2B2420;
+    /* was #202B33 — body text */
+    --ink-soft: #5C5648;
+    /* was #5B6773 — secondary/italic text */
+    --line: rgba(43, 36, 32, 0.14);
+    /* was rgba(27,44,64,0.14) — dividers, matched to new ink */
+}
+
+/* "Why Jaipur" section — background swapped to the maroon accent instead of navy */
+body.jghs-theme .feature {
+    background: var(--sky-deep);
+}
+
+body.jghs-theme {
+    --jali-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='200' viewBox='0 0 160 200'%3E%3Cg fill='none' stroke='%23FBF8F2' stroke-width='1.3'%3E%3Cpath d='M20,180 L20,95 C20,95 30,70 45,75 C60,80 70,50 80,20 C90,50 100,80 115,75 C130,70 140,95 140,95 L140,180'/%3E%3Cpath d='M80,138 C72,130 72,112 80,103 C88,112 88,130 80,138 Z'/%3E%3Cpath d='M80,138 C70,130 60,120 57,108 C67,112 77,124 80,138 Z'/%3E%3Cpath d='M80,138 C90,130 100,120 103,108 C93,112 83,124 80,138 Z'/%3E%3Cpath d='M80,138 C66,134 52,126 46,116 C58,116 72,126 80,138 Z'/%3E%3Cpath d='M80,138 C94,134 108,126 114,116 C102,116 88,126 80,138 Z'/%3E%3Ccircle cx='80' cy='139' r='3'/%3E%3Cpath d='M80,142 C68,142 58,146 55,156 C52,166 58,174 68,172 C74,170 73,162 66,163 C62,163 61,167 64,168'/%3E%3Cpath d='M80,142 C92,142 102,146 105,156 C108,166 102,174 92,172 C86,170 87,162 94,163 C98,163 99,167 96,168'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+body.jghs-theme .feature::before {
+    background-size: 160px 200px;
+    opacity: 0.16;
+}

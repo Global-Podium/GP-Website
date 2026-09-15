@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Global Podium</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon_io/android-chrome-512x512.png">
+
+  <!-- Apple -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+
+
+  <meta name="description"
+    content="Get in touch with Global Podium to register for the Jaipur Global Heritage Summit, volunteer, or partner with us.">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%231B2C40'/%3E%3Ctext x='50' y='64' font-size='50' text-anchor='middle' fill='%237FC2E3' font-family='Georgia'%3EG%3C/text%3E%3C/svg%3E"> -->
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html" aria-label="Global Podium home">
+        <img class="brand-mark" src="images/ logo GlobalP-01.svg" alt="Global Podium logo">
+        <span>
+          <span class="brand-name">Global Podium</span>
+          <span class="brand-tag">Unite &middot; Speak &middot; Rise</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="events.html">Events</a>
+        <a href="ventures.html">Our Ventures</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <!-- <a class="nav-cta" href="contact.html">Get Involved</a> -->
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Let's Talk</span>
+        <h1>Take the mic.<br>We'll take it from there.</h1>
+        <p>Registering for the Jaipur Global Heritage Summit, volunteering as a facilitator, or partnering with your
+          college or city — start the conversation here.</p>
+      </div>
+    </section>
+
+    <section style="padding-top:1;">
+      <div class="container contact-grid">
+
+        <div class="reveal">
+          <span class="eyebrow">Send A Message</span>
+          <h2 style="margin-top:16px; font-size:clamp(24px,2.8vw,32px);">Tell us what brings you to the podium</h2>
+          <form class="contact-form" id="contactForm" style="margin-top:32px;">
+            <div class="form-row">
+              <div class="field">
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname" required placeholder="Ananya">
+              </div>
+              <div class="field">
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname" required placeholder="Verma">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com">
+              </div>
+              <div class="field">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="Jaipur">
+              </div>
+            </div>
+            <div class="field">
+              <label for="reason">I'm reaching out about</label>
+              <select id="reason" name="reason">
+                <option>Jaipur Global Heritage Summit registration</option>
+                <option>Volunteering as a facilitator</option>
+                <option>Partnering with my college / city</option>
+                <option>Media &amp; press</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required
+                placeholder="Tell us a little about yourself and why you'd like to get involved..."></textarea>
+            </div>
+            <div>
+              <div style="display:flex; gap:16px; flex-wrap:wrap;">
+                <button type="button" class="btn btn-primary" id="whatsappBtn">
+                  Send via WhatsApp
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </button>
+                <button type="button" class="btn btn-ghost" id="mailBtn">
+                  Send Us a Mail
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+              <p class="form-note" style="margin-top:14px;">We typically reply within 2–3 working days.</p>
+            </div>
+          </form>
+        </div>
+
+        <div class="reveal">
+          <span class="eyebrow">Reach Us Directly</span>
+          <div style="margin-top:16px;">
+            <div class="contact-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M2 7l10 6 10-6" />
+              </svg>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:globalpodiumllp@gmail.com">globalpodiumllp@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path
+                  d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .6 3a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c1 .3 2 .5 3 .6a2 2 0 0 1 1.7 2z" />
+              </svg>
+              <div>
+                <h4>Phone</h4>
+                <a href="tel:+917014917844">+91 7014917844</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z" />
+                <circle cx="12" cy="9" r="2.5" />
+              </svg>
+              <div>
+                <h4>Address</h4>
+                <p>Jaipur, Rajasthan, India</p>
+              </div>
+            </div>
+            <!-- <div class="contact-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="5" width="18" height="16" rx="1" />
+                <path d="M8 3v4M16 3v4M3 10h18" />
+              </svg>
+              <div>
+                <h4>Office Hours</h4>
+                <p>Mon – Fri, 10:00 AM – 6:00 PM IST</p>
+              </div>
+            </div> -->
+          </div>
+
+          <span class="eyebrow" style="margin-top:36px; display:inline-flex;">Follow Along</span>
+          <div class="social-row">
+            <a href="https://www.instagram.com/global_podium/?hl=en" aria-label="Instagram"><svg viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.7">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" />
+              </svg></a>
+            <a href="https://www.linkedin.com/company/globalpodiumllp/" aria-label="LinkedIn"><svg viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.7">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <path d="M8 11v5M8 8v.01M12 16v-3a2 2 0 0 1 4 0v3M12 13v3" />
+              </svg></a>
+            <!-- <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.7">
+                <rect x="3" y="6" width="18" height="12" rx="3" />
+                <path d="M11 10l4 2-4 2z" />
+              </svg></a> -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img class="brand-mark" src="images/ logo GlobalP-02.svg" alt="Global Podium logo">
+          <span>
+            <span class="brand-name">Global Podium</span>
+            <span class="brand-tag">Unite &middot; Speak &middot; Rise</span>
+          </span>
+        </div>
+        <p class="footer-desc">A youth empowerment platform building tomorrow's speakers and leaders through summits,
+          debate and dialogue.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="events.html">Events</a>
+        <a href="ventures.html">Our Ventures</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Upcoming</h5>
+        <p>Jaipur Global Heritage Summit</p>
+        <p>December 2026</p>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:globalpodiumllp@gmail.com">globalpodiumllp@gmail.com</a>
+        <a href="tel:+917014917844">+91 7014917844</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Global Podium. All rights reserved.</span>
+      <span>Jaipur, Rajasthan · India</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
