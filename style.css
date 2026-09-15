@@ -1801,7 +1801,7 @@ body:not(.jghs-theme) main>section:not(.hero):not(.page-hero):not(.feature):not(
   margin-top: 4px;
 }
 
-@media (max-width: 780px) {
+/* @media (max-width: 780px) {
   .person-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1811,5 +1811,47 @@ body:not(.jghs-theme) main>section:not(.hero):not(.page-hero):not(.feature):not(
   .person-grid {
     grid-template-columns: 1fr 1fr;
     gap: 24px 16px;
+  }
+} */
+
+
+
+/* ---------- TABLET / PHONE ---------- */
+
+@media (max-width: 780px) {
+
+  .person-grid,
+  .person-grid.person-grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 16px;
+  }
+}
+
+
+/* ---------- SMALL PHONES ---------- */
+
+@media (max-width: 480px) {
+
+  .person-grid,
+  .person-grid.person-grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 14px;
+  }
+
+  .person-card h4 {
+    font-size: 15px;
+    line-height: 1.3;
+    margin-bottom: 0;
+  }
+
+  .person-card span {
+    font-size: 11px;
+    line-height: 1.7;
+    margin-top: 5px;
+  }
+
+  .person-photo {
+    margin-bottom: 10px;
+    border-radius: 12px;
   }
 }
