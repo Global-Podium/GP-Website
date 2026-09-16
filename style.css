@@ -1763,7 +1763,7 @@ body:not(.jghs-theme) main>section:not(.hero):not(.page-hero):not(.feature):not(
 }
 
 .person-grid.person-grid-3 {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .person-card {
